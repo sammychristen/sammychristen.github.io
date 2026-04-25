@@ -5,383 +5,397 @@
     <title>Sammy Christen</title>
     <meta name="author" content="Sammy Christen">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Sammy Christen's personal academic website">
+    <meta name="description" content="Sammy Christen — Postdoctoral researcher at Disney Research Zurich, working on human–robot interaction and dexterous robotic grasping.">
+    <meta name="theme-color" content="#fafaf7">
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌐</text></svg>">
-    <!-- Font Awesome for icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@300;400;500;600;700&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   </head>
 
   <body>
+    <!-- Top navigation -->
+    <header class="nav">
+      <div class="nav-inner">
+        <a href="#about" class="nav-brand">Sammy Christen</a>
+        <nav class="nav-links" aria-label="Primary">
+          <a href="#about">About</a>
+          <a href="#news">News</a>
+          <a href="#publications">Publications</a>
+          <a href="#reviewing">Reviewing</a>
+        </nav>
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle color theme" type="button">
+          <i class="fas fa-moon" aria-hidden="true"></i>
+        </button>
+      </div>
+    </header>
+
     <main class="main-container">
-      <!-- About Section -->
-      <section id="about" class="section fadeIn">
-        <div class="profile-container">
-          <div class="bio-container">
+      <!-- Hero / About -->
+      <section id="about" class="section hero reveal">
+        <div class="hero-grid">
+          <div class="hero-text">
+            <p class="eyebrow">Postdoctoral Researcher · Disney Research Zurich</p>
             <h1 class="name">Sammy Christen</h1>
             <p class="bio">
-              I am a postdoctoral researcher in the robotics team at Disney Resarch Zurich. I obtained my PhD at the <a href="https://ait.ethz.ch/">AIT lab</a>, ETH Zurich, supervised by Professor <a href="https://ait.ethz.ch/people/hilliges">Otmar Hilliges</a> and co-supervised by Professor <a href="https://sketch.kaist.ac.kr/people/jeminhwangbo">Jemin Hwangbo</a></a>. My research focuses on human-robot interaction and dexterous robotic grasping. During my PhD, I spent time at the NVIDIA AI Robotics Lab in Seattle and at Meta Reality Labs. 
+              I am a postdoctoral researcher in the robotics team at Disney Research Zurich. I obtained my PhD at the <a href="https://ait.ethz.ch/">AIT lab</a>, ETH Zurich, supervised by Professor <a href="https://ait.ethz.ch/people/hilliges">Otmar Hilliges</a> and co-supervised by Professor <a href="https://sketch.kaist.ac.kr/people/jeminhwangbo">Jemin Hwangbo</a>. My research focuses on human–robot interaction and dexterous robotic grasping. During my PhD, I spent time at the NVIDIA AI Robotics Lab in Seattle and at Meta Reality Labs.
             </p>
-            <div class="social-links">
-              <a href="mailto:sammy.christen@disneyresearch.com" aria-label="Email"><i class="fas fa-envelope"></i> Email</a>
-              <a href="https://www.linkedin.com/in/sammy-christen/" aria-label="LinkedIn"><i class="fab fa-linkedin"></i> LinkedIn</a>
-              <a href="https://scholar.google.com/citations?user=r1L_2qkAAAAJ&hl=de" aria-label="Google Scholar"><i class="fas fa-graduation-cap"></i> Google Scholar</a>
-              <a href="https://x.com/sammy_j_c" aria-label="Twitter"><i class="fas fa-twitter"></i> X</a>
-              <a href="https://github.com/sammychristen" aria-label="GitHub"><i class="fab fa-github"></i> Github</a>
+            <ul class="social-links" aria-label="Contact and profiles">
+              <li><a href="mailto:sammy.christen@disneyresearch.com" aria-label="Email"><i class="fas fa-envelope"></i><span>Email</span></a></li>
+              <li><a href="https://scholar.google.com/citations?user=r1L_2qkAAAAJ&hl=de" aria-label="Google Scholar"><i class="fas fa-graduation-cap"></i><span>Scholar</span></a></li>
+              <li><a href="https://www.linkedin.com/in/sammy-christen/" aria-label="LinkedIn"><i class="fab fa-linkedin"></i><span>LinkedIn</span></a></li>
+              <li><a href="https://x.com/sammy_j_c" aria-label="X (Twitter)"><i class="fab fa-x-twitter"></i><span>X</span></a></li>
+              <li><a href="https://github.com/sammychristen" aria-label="GitHub"><i class="fab fa-github"></i><span>GitHub</span></a></li>
+            </ul>
+          </div>
+          <div class="hero-image">
+            <div class="hero-image-frame">
+              <img class="profile-image" alt="Portrait of Sammy Christen" src="images/SA_sammy.jpg">
             </div>
-          </div>
-          <div class="profile-image-container">
-            <img class="profile-image" alt="profile photo" src="images/SA_sammy.jpg">
-            
-          </div>
-        </div>
-      </section>
-    
-      <!-- News Section -->
-      <section id="news" class="section fadeIn delay-1">
-        <h2 class="section-title">News</h2>
-        <div class="news-container">
-
-        <div class="news-item" style="display: flex; align-items: flex-start; margin-bottom: 1rem;">
-            <div class="news-date" style="flex: 0 0 150px; font-weight: bold; color: #555;">October 2025</div>
-            <div class="news-content" style="flex: 1; padding-left: 1rem;">
-              <p>Invited talk at the <a href="https://www.plusx.ai/" target="_blank">AI+X summit</a>.</p>
-            </div>
-          </div>  
-        <div class="news-item" style="display: flex; align-items: flex-start; margin-bottom: 1rem;">
-            <div class="news-date" style="flex: 0 0 150px; font-weight: bold; color: #555;">August 2025</div>
-            <div class="news-content" style="flex: 1; padding-left: 1rem;">
-              <p>Our paper "RobustDexGrasp: Robust Dexterous Grasping of General Objects" is accepted at <a href="https://www.corl.org/" target="_blank">CoRL 2025</a>.</p>
-            </div>
-          </div>
-          
-        <div class="news-item" style="display: flex; align-items: flex-start; margin-bottom: 1rem;">
-          <div class="news-date" style="flex: 0 0 150px; font-weight: bold; color: #555;">June 2025</div>
-          <div class="news-content" style="flex: 1; padding-left: 1rem;">
-            <p>Our paper "Autonomous Human-Robot Interaction via Operator Imitation" is accepted at <a href="https://www.iros25.org/" target="_blank">IROS 2025</a>.</p>
-          </div>
-        </div>
-        <div class="news-item" style="display: flex; align-items: flex-start; margin-bottom: 1rem;">
-          <div class="news-date" style="flex: 0 0 150px; font-weight: bold; color: #555;">June 2025</div>
-          <div class="news-content" style="flex: 1; padding-left: 1rem;">
-            <p>Part of the organizing committee at the  <a href="https://sites.google.com/view/gai-hri/home" target="_blank">GenAI-HRI workshop</a> at RSS 2025.</p>
-          </div>
-        </div>
-        <div class="news-item" style="display: flex; align-items: flex-start; margin-bottom: 1rem;">
-          <div class="news-date" style="flex: 0 0 150px; font-weight: bold; color: #555;">May 2025</div>
-          <div class="news-content" style="flex: 1; padding-left: 1rem;">
-            <p>Honored as outstanding reviewer at <a href="https://cvpr.thecvf.com/" target="_blank">CVPR 2025</a>.</p>
-          </div>
-        </div>
-        <div class="news-item" style="display: flex; align-items: flex-start; margin-bottom: 1rem;">
-          <div class="news-date" style="flex: 0 0 150px; font-weight: bold; color: #555;">March 2025</div>
-          <div class="news-content" style="flex: 1; padding-left: 1rem;">
-            <p>Served as social media chair at  <a href="https://3dvconf.github.io/2025/" target="_blank">3DV 2025</a>.</p>
-          </div>
-        </div>
-        <div class="news-item" style="display: flex; align-items: flex-start; margin-bottom: 1rem;">
-          <div class="news-date" style="flex: 0 0 150px; font-weight: bold; color: #555;">October 2024</div>
-          <div class="news-content" style="flex: 1; padding-left: 1rem;">
-            <p>Started a new position as Postdoctoral Researcher at Disney Research.</p>
-          </div>
-        </div>
-        <div class="news-item" style="display: flex; align-items: flex-start; margin-bottom: 1rem;">
-          <div class="news-date" style="flex: 0 0 150px; font-weight: bold; color: #555;">October 2024</div>
-          <div class="news-content" style="flex: 1; padding-left: 1rem;">
-            <p>Successfully defended my PhD!</p>
-          </div>
           </div>
         </div>
       </section>
 
-      <!-- Publications Section -->
-       
-      <section id="publications" class="section fadeIn delay-1">
-        <h2 class="section-title">Selected Publications</h2>
+      <!-- News -->
+      <section id="news" class="section reveal">
+        <header class="section-header">
+          <h2 class="section-title">News</h2>
+          <span class="section-rule" aria-hidden="true"></span>
+        </header>
+        <ol class="timeline">
+          <li class="timeline-item">
+            <div class="timeline-date">Oct 2025</div>
+            <div class="timeline-body"><p>Invited talk at the <a href="https://www.plusx.ai/" target="_blank" rel="noopener">AI+X summit</a>.</p></div>
+          </li>
+          <li class="timeline-item">
+            <div class="timeline-date">Aug 2025</div>
+            <div class="timeline-body"><p>Our paper <em>RobustDexGrasp: Robust Dexterous Grasping of General Objects</em> is accepted at <a href="https://www.corl.org/" target="_blank" rel="noopener">CoRL 2025</a>.</p></div>
+          </li>
+          <li class="timeline-item">
+            <div class="timeline-date">Jun 2025</div>
+            <div class="timeline-body"><p>Our paper <em>Autonomous Human-Robot Interaction via Operator Imitation</em> is accepted at <a href="https://www.iros25.org/" target="_blank" rel="noopener">IROS 2025</a>.</p></div>
+          </li>
+          <li class="timeline-item">
+            <div class="timeline-date">Jun 2025</div>
+            <div class="timeline-body"><p>Part of the organizing committee at the <a href="https://sites.google.com/view/gai-hri/home" target="_blank" rel="noopener">GenAI-HRI workshop</a> at RSS 2025.</p></div>
+          </li>
+          <li class="timeline-item">
+            <div class="timeline-date">May 2025</div>
+            <div class="timeline-body"><p>Honored as outstanding reviewer at <a href="https://cvpr.thecvf.com/" target="_blank" rel="noopener">CVPR 2025</a>.</p></div>
+          </li>
+          <li class="timeline-item">
+            <div class="timeline-date">Mar 2025</div>
+            <div class="timeline-body"><p>Served as social media chair at <a href="https://3dvconf.github.io/2025/" target="_blank" rel="noopener">3DV 2025</a>.</p></div>
+          </li>
+          <li class="timeline-item">
+            <div class="timeline-date">Oct 2024</div>
+            <div class="timeline-body"><p>Started a new position as Postdoctoral Researcher at Disney Research.</p></div>
+          </li>
+          <li class="timeline-item">
+            <div class="timeline-date">Oct 2024</div>
+            <div class="timeline-body"><p>Successfully defended my PhD!</p></div>
+          </li>
+        </ol>
+      </section>
+
+      <!-- Publications -->
+      <section id="publications" class="section reveal">
+        <header class="section-header">
+          <h2 class="section-title">Selected Publications</h2>
+          <span class="section-rule" aria-hidden="true"></span>
+        </header>
         <p class="section-subtitle"><em>* indicates equal contribution</em></p>
-        <div class="publication-item">
+
+        <article class="publication-item">
           <div class="publication-media">
-            <video autoplay controls muted loop style="max-width: 100%; height: auto;">
-                <source src="images/crash_course.mp4" type="video/mp4">
-              </video>
+            <video autoplay muted loop playsinline preload="metadata">
+              <source src="images/crash_course.mp4" type="video/mp4">
+            </video>
           </div>
           <div class="publication-content">
+            <span class="pub-venue-badge">ICRA 2026</span>
             <h3 class="publication-title">Robot Crash Course: Learning Soft and Stylized Falling</h3>
             <p class="publication-authors">
-              <a href="https://ch.linkedin.com/in/pstrauch">Pascal Strauch</a>, 
-              <a href="https://scholar.google.com/citations?user=iVjJUr8AAAAJ&hl=en">David Müller</a>, 
-              <strong><a href="https://sammychristen.github.io">Sammy Christen</a></strong>, 
-              <a href="https://aserifi.github.io/">Agon Serifi</a>, 
-              <a href="https://scholar.google.com/citations?user=ep0cXXsAAAAJ&hl=en">Ruben Grandia</a>, 
-              <a href="https://ch.linkedin.com/in/espen-knoop-47b525114">Espen Knoop</a>, 
+              <a href="https://ch.linkedin.com/in/pstrauch">Pascal Strauch</a>,
+              <a href="https://scholar.google.com/citations?user=iVjJUr8AAAAJ&hl=en">David Müller</a>,
+              <strong><a href="https://sammychristen.github.io">Sammy Christen</a></strong>,
+              <a href="https://aserifi.github.io/">Agon Serifi</a>,
+              <a href="https://scholar.google.com/citations?user=ep0cXXsAAAAJ&hl=en">Ruben Grandia</a>,
+              <a href="https://ch.linkedin.com/in/espen-knoop-47b525114">Espen Knoop</a>,
               <a href="https://www.baecher.info/">Moritz Bächer</a>
             </p>
-            <p class="publication-venue"> International Conference on Robotics and Automation (ICRA), 2026</p>
+            <p class="publication-venue">International Conference on Robotics and Automation (ICRA), 2026</p>
             <div class="publication-links">
-              <a href="https://arxiv.org/abs/2511.10635" class="paper-link"><i class="fas fa-file-pdf"></i> Paper</a>
-              <a href="https://www.youtube.com/watch?v=BXqpVMPk63A" class="project-link"><i class="fas fa-video"></i> Video</a>
+              <a href="https://arxiv.org/abs/2511.10635"><i class="fas fa-file-pdf"></i> Paper</a>
+              <a href="https://www.youtube.com/watch?v=BXqpVMPk63A"><i class="fas fa-video"></i> Video</a>
             </div>
           </div>
-        </div>
-        <div class="publication-item">
+        </article>
+
+        <article class="publication-item">
           <div class="publication-media">
-            <video autoplay controls muted loop style="max-width: 100%; height: auto;">
-                <source src="images/autoop_compact.mp4" type="video/mp4">
-              </video>
+            <video autoplay muted loop playsinline preload="metadata">
+              <source src="images/autoop_compact.mp4" type="video/mp4">
+            </video>
           </div>
           <div class="publication-content">
+            <span class="pub-venue-badge">IROS 2025</span>
             <h3 class="publication-title">Autonomous Human-Robot Interaction via Operator Imitation</h3>
             <p class="publication-authors">
-              <strong><a href="https://sammychristen.github.io">Sammy Christen</a></strong>, 
-              <a href="https://scholar.google.com/citations?user=iVjJUr8AAAAJ&hl=en">David Müller</a>, 
-              <a href="https://aserifi.github.io/">Agon Serifi</a>, 
-              <a href="https://scholar.google.com/citations?user=ep0cXXsAAAAJ&hl=en">Ruben Grandia</a>, 
-              <a href="https://scholar.google.com/citations?user=zrNOjPIAAAAJ&hl=en">Georg Wiedebach</a>, 
-              <a href="https://scholar.google.com/citations?user=29kBCKEAAAAJ&hl=en">Michael A. Hopkins</a>, 
-              <a href="https://ch.linkedin.com/in/espen-knoop-47b525114">Espen Knoop</a>, 
+              <strong><a href="https://sammychristen.github.io">Sammy Christen</a></strong>,
+              <a href="https://scholar.google.com/citations?user=iVjJUr8AAAAJ&hl=en">David Müller</a>,
+              <a href="https://aserifi.github.io/">Agon Serifi</a>,
+              <a href="https://scholar.google.com/citations?user=ep0cXXsAAAAJ&hl=en">Ruben Grandia</a>,
+              <a href="https://scholar.google.com/citations?user=zrNOjPIAAAAJ&hl=en">Georg Wiedebach</a>,
+              <a href="https://scholar.google.com/citations?user=29kBCKEAAAAJ&hl=en">Michael A. Hopkins</a>,
+              <a href="https://ch.linkedin.com/in/espen-knoop-47b525114">Espen Knoop</a>,
               <a href="https://www.baecher.info/">Moritz Bächer</a>
             </p>
-            <p class="publication-venue"> International Conference on Intelligent Robots and Systems (IROS), 2025</p>
+            <p class="publication-venue">International Conference on Intelligent Robots and Systems (IROS), 2025</p>
             <div class="publication-links">
-              <a href="data/autoop.pdf" class="paper-link"><i class="fas fa-file-pdf"></i> Paper</a>
-              <a href="https://www.youtube.com/watch?v=4U4etupwzhQ" class="project-link"><i class="fas fa-video"></i> Video</a>
+              <a href="data/autoop.pdf"><i class="fas fa-file-pdf"></i> Paper</a>
+              <a href="https://www.youtube.com/watch?v=4U4etupwzhQ"><i class="fas fa-video"></i> Video</a>
             </div>
           </div>
-        </div>
-        <div class="publication-item">
+        </article>
+
+        <article class="publication-item">
           <div class="publication-media">
-            <video autoplay controls muted loop>
-                  <source src="images/RobustDexGrasp_application.mp4" type="video/mp4">
-                </video>
+            <video autoplay muted loop playsinline preload="metadata">
+              <source src="images/RobustDexGrasp_application.mp4" type="video/mp4">
+            </video>
           </div>
           <div class="publication-content">
+            <span class="pub-venue-badge">CoRL 2025</span>
             <h3 class="publication-title">RobustDexGrasp: Robust Dexterous Grasping of General Objects</h3>
             <p class="publication-authors">
-              <a href="https://zdchan.github.io">Hui Zhang*</a>, 
-              <a href="https://zdchan.github.io/Robust_DexGrasp/">Zijian Wu*</a>, 
-              <a href="https://zdchan.github.io/Robust_DexGrasp/">Linyi Huang</a>, 
-              <strong><a href="https://sammychristen.github.io">Sammy Christen</a></strong>, 
+              <a href="https://zdchan.github.io">Hui Zhang*</a>,
+              <a href="https://zdchan.github.io/Robust_DexGrasp/">Zijian Wu*</a>,
+              <a href="https://zdchan.github.io/Robust_DexGrasp/">Linyi Huang</a>,
+              <strong><a href="https://sammychristen.github.io">Sammy Christen</a></strong>,
               <a href="https://facultyprofiles.hkust-gz.edu.cn/faculty-personal-page/SONG-Jie/jsongroas">Jie Song</a>
             </p>
             <p class="publication-venue">Conference on Robot Learning (CoRL), 2025</p>
             <div class="publication-links">
-              <a href="https://arxiv.org/abs/2504.05287" class="paper-link"><i class="fas fa-file-pdf"></i> Paper</a>
-              <a href="https://zdchan.github.io/Robust_DexGrasp/" class="project-link"><i class="fas fa-globe"></i> Project Page</a>
-              <a href="https://github.com/zdchan/RobustDexGrasp" class="code-link"><i class="fab fa-github"></i> Code</a>
+              <a href="https://arxiv.org/abs/2504.05287"><i class="fas fa-file-pdf"></i> Paper</a>
+              <a href="https://zdchan.github.io/Robust_DexGrasp/"><i class="fas fa-globe"></i> Project</a>
+              <a href="https://github.com/zdchan/RobustDexGrasp"><i class="fab fa-github"></i> Code</a>
             </div>
           </div>
-        </div>
+        </article>
 
-        <div class="publication-item">
+        <article class="publication-item">
           <div class="publication-media">
-            <video autoplay controls muted loop>
-                  <source src="images/omnigrasp.mp4" type="video/mp4">
-                </video>
+            <video autoplay muted loop playsinline preload="metadata">
+              <source src="images/omnigrasp.mp4" type="video/mp4">
+            </video>
           </div>
           <div class="publication-content">
+            <span class="pub-venue-badge">NeurIPS 2024</span>
             <h3 class="publication-title">Omnigrasp: Grasping Diverse Objects with Simulated Humanoids</h3>
             <p class="publication-authors">
-             <a href="https://www.zhengyiluo.com/">Zhengyi Luo</a></strong>, 
-             <a href="https://www.jinkuncao.com/">Jinkun Cao</a>, 
-             <strong><a href="https://sammychristen.github.io">Sammy Christen</a></strong>, 
-              <a href="https://www.alex-winkler.com/">Alexander Winkler</a>, 
-              <a href="https://kriskitani.github.io/">Kris Kitani</a>, 
+              <a href="https://www.zhengyiluo.com/">Zhengyi Luo</a>,
+              <a href="https://www.jinkuncao.com/">Jinkun Cao</a>,
+              <strong><a href="https://sammychristen.github.io">Sammy Christen</a></strong>,
+              <a href="https://www.alex-winkler.com/">Alexander Winkler</a>,
+              <a href="https://kriskitani.github.io/">Kris Kitani</a>,
               <a href="https://sites.google.com/view/xuweipeng">Weipeng Xu</a>
             </p>
             <p class="publication-venue">Annual Conference on Neural Information Processing Systems (NeurIPS), 2024</p>
             <div class="publication-links">
-              <a href="https://arxiv.org/abs/2407.11385" class="paper-link"><i class="fas fa-file-pdf"></i> Paper</a>
-              <a href="https://www.zhengyiluo.com/Omnigrasp-Site/" class="project-link"><i class="fas fa-globe"></i> Project Page</a>
-              <a href="https://github.com/ZhengyiLuo/Omnigrasp" class="code-link"><i class="fab fa-github"></i> Code</a>
+              <a href="https://arxiv.org/abs/2407.11385"><i class="fas fa-file-pdf"></i> Paper</a>
+              <a href="https://www.zhengyiluo.com/Omnigrasp-Site/"><i class="fas fa-globe"></i> Project</a>
+              <a href="https://github.com/ZhengyiLuo/Omnigrasp"><i class="fab fa-github"></i> Code</a>
             </div>
           </div>
-        </div>
-        
-        <div class="publication-item">
+        </article>
+
+        <article class="publication-item">
           <div class="publication-media">
-            <img src="images/diffh2o.gif" alt="DiffH2O GIF" class="publication-gif">
+            <img src="images/diffh2o.gif" alt="DiffH2O demo" class="publication-gif">
           </div>
           <div class="publication-content">
+            <span class="pub-venue-badge">SIGGRAPH Asia 2024</span>
             <h3 class="publication-title">DiffH2O: Diffusion-Based Synthesis of Hand-Object Interactions from Textual Descriptions</h3>
             <p class="publication-authors">
-              <strong><a href="https://sammychristen.github.io">Sammy Christen</a></strong>, 
-              <a href="https://shreyashampali.github.io/">Shreyas Hampali</a>, 
-              <a href="https://fadimesener.github.io/">Fadime Sener</a>, 
-              <a href="https://scholar.google.com/citations?user=yz2P_aUAAAAJ&hl=en">Edoardo Remelli</a>, 
+              <strong><a href="https://sammychristen.github.io">Sammy Christen</a></strong>,
+              <a href="https://shreyashampali.github.io/">Shreyas Hampali</a>,
+              <a href="https://fadimesener.github.io/">Fadime Sener</a>,
+              <a href="https://scholar.google.com/citations?user=yz2P_aUAAAAJ&hl=en">Edoardo Remelli</a>,
               <a href="https://thodan.github.io/">Tomas Hodan</a>,
               <a href="https://scholar.google.com/citations?user=HDYUYvwAAAAJ&hl=en">Eric Sauser</a>,
               <a href="https://shugaoma.github.io/">Shugao Ma</a>,
-              <a href="https://btekin.github.io/">Bugra Tekin</a>,
+              <a href="https://btekin.github.io/">Bugra Tekin</a>
             </p>
             <p class="publication-venue">SIGGRAPH Asia Conference Papers, 2024</p>
             <div class="publication-links">
-              <a href="https://arxiv.org/abs/2403.17827" class="paper-link"><i class="fas fa-file-pdf"></i> Paper</a>
-              <a href="https://diffh2o.github.io/" class="project-link"><i class="fas fa-globe"></i> Project Page</a>
-              <a href="https://www.youtube.com/watch?feature=shared&v=ed38EqN6EhU" class="video-link"><i class="fas fa-video"></i> Video</a>
-              <a href="https://github.com/facebookresearch/diffh2o" class="code-link"><i class="fab fa-github"></i> Code</a>
+              <a href="https://arxiv.org/abs/2403.17827"><i class="fas fa-file-pdf"></i> Paper</a>
+              <a href="https://diffh2o.github.io/"><i class="fas fa-globe"></i> Project</a>
+              <a href="https://www.youtube.com/watch?feature=shared&v=ed38EqN6EhU"><i class="fas fa-video"></i> Video</a>
+              <a href="https://github.com/facebookresearch/diffh2o"><i class="fab fa-github"></i> Code</a>
             </div>
           </div>
-        </div>
-      
-        <div class="publication-item">
+        </article>
+
+        <article class="publication-item">
           <div class="publication-media">
-            <video autoplay controls muted loop>
-                  <source src="images/handoversim2real.mp4" type="video/mp4">
-                </video>
+            <video autoplay muted loop playsinline preload="metadata">
+              <source src="images/handoversim2real.mp4" type="video/mp4">
+            </video>
           </div>
           <div class="publication-content">
+            <span class="pub-venue-badge">CVPR 2023 · Highlight</span>
             <h3 class="publication-title">Learning Human-to-Robot Handovers from Point Clouds</h3>
             <p class="publication-authors">
-              <strong><a href="https://sammychristen.github.io">Sammy Christen</a></strong>, 
-              <a href="https://research.nvidia.com/person/wei-yang">Wei Yang</a>, 
-              <a href="https://research.nvidia.com/person/cdarpino">Claudia Pérez-D'Arpino</a>, 
-              <a href="https://ait.ethz.ch/people/hilliges">Otmar Hilliges</a>, 
-              <a href="https://homes.cs.washington.edu/~fox/">Dieter Fox</a>, 
-              <a href="https://research.nvidia.com/person/yu-wei-chao">Yu-Wei chao</a>
+              <strong><a href="https://sammychristen.github.io">Sammy Christen</a></strong>,
+              <a href="https://research.nvidia.com/person/wei-yang">Wei Yang</a>,
+              <a href="https://research.nvidia.com/person/cdarpino">Claudia Pérez-D'Arpino</a>,
+              <a href="https://ait.ethz.ch/people/hilliges">Otmar Hilliges</a>,
+              <a href="https://homes.cs.washington.edu/~fox/">Dieter Fox</a>,
+              <a href="https://research.nvidia.com/person/yu-wei-chao">Yu-Wei Chao</a>
             </p>
-            <p class="publication-venue">IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2023</p>
-            <p class="publication-venue"><strong>Highlight (top 2.5%)</strong></p>
+            <p class="publication-venue">IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2023 — <strong>Highlight (top 2.5%)</strong></p>
             <div class="publication-links">
-              <a href="https://arxiv.org/abs/2303.17592" class="paper-link"><i class="fas fa-file-pdf"></i> Paper</a>
-              <a href="https://handover-sim2real.github.io/" class="project-link"><i class="fas fa-globe"></i> Project Page</a>
-              <a href="https://www.youtube.com/watch?v=IsjCdoIAA7s&feature=youtu.be" class="video-link"><i class="fas fa-video"></i> Video</a>
-              <a href="https://github.com/NVlabs/handover-sim2real" class="code-link"><i class="fab fa-github"></i> Code</a>
+              <a href="https://arxiv.org/abs/2303.17592"><i class="fas fa-file-pdf"></i> Paper</a>
+              <a href="https://handover-sim2real.github.io/"><i class="fas fa-globe"></i> Project</a>
+              <a href="https://www.youtube.com/watch?v=IsjCdoIAA7s&feature=youtu.be"><i class="fas fa-video"></i> Video</a>
+              <a href="https://github.com/NVlabs/handover-sim2real"><i class="fab fa-github"></i> Code</a>
             </div>
           </div>
-        </div>
-      </section>
+        </article>
 
-        <div class="publication-item">
+        <article class="publication-item">
           <div class="publication-media">
-            <video autoplay controls muted loop>
-                  <source src="images/drill.mp4" type="video/mp4">
-                </video>
+            <video autoplay muted loop playsinline preload="metadata">
+              <source src="images/drill.mp4" type="video/mp4">
+            </video>
           </div>
           <div class="publication-content">
+            <span class="pub-venue-badge">CVPR 2022</span>
             <h3 class="publication-title">D-Grasp: Physically Plausible Dynamic Grasp Synthesis for Hand-Object Interactions</h3>
             <p class="publication-authors">
-              <strong><a href="https://sammychristen.github.io">Sammy Christen</a></strong>, 
-              <a href="https://ps.is.tuebingen.mpg.de/person/mkocabas">Muhammed Kocabas</a>, 
-              <a href="https://ait.ethz.ch/people/eaksan">Emre Aksan</a>, 
-              <a href="https://www.railab.kaist.ac.kr/sections/members">Jemin Hwangbo</a>, 
-              <a href="https://ait.ethz.ch/people/song">Jie Song</a>, 
+              <strong><a href="https://sammychristen.github.io">Sammy Christen</a></strong>,
+              <a href="https://ps.is.tuebingen.mpg.de/person/mkocabas">Muhammed Kocabas</a>,
+              <a href="https://ait.ethz.ch/people/eaksan">Emre Aksan</a>,
+              <a href="https://www.railab.kaist.ac.kr/sections/members">Jemin Hwangbo</a>,
+              <a href="https://ait.ethz.ch/people/song">Jie Song</a>,
               <a href="https://ait.ethz.ch/people/hilliges">Otmar Hilliges</a>
             </p>
             <p class="publication-venue">IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2022</p>
             <div class="publication-links">
-              <a href="https://files.ait.ethz.ch/projects/d-grasp/d-grasp.pdf" class="paper-link"><i class="fas fa-file-pdf"></i> Paper</a>
-              <a href="https://eth-ait.github.io/d-grasp/" class="project-link"><i class="fas fa-globe"></i> Project Page</a>
-              <a href="https://www.youtube.com/watch?v=5OqbDq-pgLc" class="video-link"><i class="fas fa-video"></i> Video</a>
-              <a href="https://github.com/sammychristen/dgrasp" class="code-link"><i class="fab fa-github"></i> Code</a>
+              <a href="https://files.ait.ethz.ch/projects/d-grasp/d-grasp.pdf"><i class="fas fa-file-pdf"></i> Paper</a>
+              <a href="https://eth-ait.github.io/d-grasp/"><i class="fas fa-globe"></i> Project</a>
+              <a href="https://www.youtube.com/watch?v=5OqbDq-pgLc"><i class="fas fa-video"></i> Video</a>
+              <a href="https://github.com/sammychristen/dgrasp"><i class="fab fa-github"></i> Code</a>
             </div>
           </div>
-        </div>
+        </article>
       </section>
 
-      <!-- Reviewing Section -->
-      <section id="reviewing" class="section fadeIn delay-3">
-        <h2 class="section-title">Reviewing</h2>
-        <div class="reviews-container">
-          <div class="review-item">
-            <div class="review-date">2025</div>
-            <div class="review-content">
-              <p> CoRL, CVPR (outstanding reviewer), ICCV, ICRA, IROS, RA-L, SIGGRAPH Asia</p>
-            </div>
-          </div>
-          
-          <div class="review-item">
-            <div class="review-date">2024</div>
-            <div class="review-content">
-              <p> CVPR, EAI@CVPR, ECCV, ICRA, IROS, SIGGRAPH, SIGGRAPH Asia, T-RO </p>
-            </div>
-          </div>
-
-          <div class="review-item">
-            <div class="review-date">2023</div>
-            <div class="review-content">
-              <p> CVPR, ICCV, ICRA, IROS, RA-L, SIGGRAPH, 3DV, Comput Methods Biomech and Biomed Eng </p>
-            </div>
-          </div>
-
-          <div class="review-item">
-            <div class="review-date">2022</div>
-            <div class="review-content">
-              <p> CVPR, ICRA, IROS, RA-L, ECCV (outstanding reviewer), SIGGRAPH Asia, Computers & Graphics </p>
-            </div>
-          </div>
-
-          <div class="review-item">
-            <div class="review-date">2021</div>
-            <div class="review-content">
-              <p> IROS, NeurIPS, RA-L </p>
-            </div>
-          </div>
-
-          <div class="review-item">
-            <div class="review-date">2020</div>
-            <div class="review-content">
-              <p> CHI, RA-L, ICRA </p>
-            </div>
-          </div>
-        </div>
+      <!-- Reviewing -->
+      <section id="reviewing" class="section reveal">
+        <header class="section-header">
+          <h2 class="section-title">Reviewing</h2>
+          <span class="section-rule" aria-hidden="true"></span>
+        </header>
+        <ul class="reviews-list">
+          <li class="review-row">
+            <span class="review-year">2025</span>
+            <span class="review-venues">CoRL, CVPR <em>(outstanding reviewer)</em>, ICCV, ICRA, IROS, RA-L, SIGGRAPH Asia</span>
+          </li>
+          <li class="review-row">
+            <span class="review-year">2024</span>
+            <span class="review-venues">CVPR, EAI@CVPR, ECCV, ICRA, IROS, SIGGRAPH, SIGGRAPH Asia, T-RO</span>
+          </li>
+          <li class="review-row">
+            <span class="review-year">2023</span>
+            <span class="review-venues">CVPR, ICCV, ICRA, IROS, RA-L, SIGGRAPH, 3DV, Comput Methods Biomech and Biomed Eng</span>
+          </li>
+          <li class="review-row">
+            <span class="review-year">2022</span>
+            <span class="review-venues">CVPR, ICRA, IROS, RA-L, ECCV <em>(outstanding reviewer)</em>, SIGGRAPH Asia, Computers &amp; Graphics</span>
+          </li>
+          <li class="review-row">
+            <span class="review-year">2021</span>
+            <span class="review-venues">IROS, NeurIPS, RA-L</span>
+          </li>
+          <li class="review-row">
+            <span class="review-year">2020</span>
+            <span class="review-venues">CHI, RA-L, ICRA</span>
+          </li>
+        </ul>
       </section>
     </main>
 
     <footer class="footer">
-      <div class="container">
-        <p>&copy; 2024 Sammy Christen</p>
+      <div class="footer-inner">
+        <p>&copy; <span id="year">2026</span> Sammy Christen</p>
+        <p class="footer-meta">Built with care — hosted on GitHub Pages.</p>
       </div>
     </footer>
 
-    <!-- JavaScript -->
     <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        // Dark/Light Mode Toggle
-        const toggleSwitch = document.createElement('div');
-        toggleSwitch.className = 'theme-toggle-fixed';
-        toggleSwitch.innerHTML = '<i class="fas fa-moon" id="dark-mode-toggle"></i>';
-        document.body.appendChild(toggleSwitch);
-        
-        const darkModeToggle = document.getElementById('dark-mode-toggle');
-        const body = document.body;
-        
-        // Check for saved theme preference or use preferred color scheme
-        const savedTheme = localStorage.getItem('theme');
-        if (savedTheme) {
-          body.classList.add(savedTheme);
-          if (savedTheme === 'dark-mode') {
-            darkModeToggle.classList.replace('fa-moon', 'fa-sun');
+      (function () {
+        const root = document.documentElement;
+        const toggle = document.getElementById('theme-toggle');
+        const icon = toggle ? toggle.querySelector('i') : null;
+
+        const applyTheme = (theme) => {
+          root.dataset.theme = theme;
+          if (icon) {
+            icon.classList.toggle('fa-moon', theme === 'light');
+            icon.classList.toggle('fa-sun', theme === 'dark');
           }
-        } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-          body.classList.add('dark-mode');
-          darkModeToggle.classList.replace('fa-moon', 'fa-sun');
+        };
+
+        const saved = localStorage.getItem('theme');
+        const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        applyTheme(saved || (prefersDark ? 'dark' : 'light'));
+
+        if (toggle) {
+          toggle.addEventListener('click', () => {
+            const next = root.dataset.theme === 'dark' ? 'light' : 'dark';
+            applyTheme(next);
+            localStorage.setItem('theme', next);
+          });
         }
-        
-        darkModeToggle.addEventListener('click', function() {
-          body.classList.toggle('dark-mode');
-          
-          if (body.classList.contains('dark-mode')) {
-            localStorage.setItem('theme', 'dark-mode');
-            this.classList.replace('fa-moon', 'fa-sun');
-          } else {
-            localStorage.setItem('theme', 'light-mode');
-            this.classList.replace('fa-sun', 'fa-moon');
-          }
-        });
-        
-        // Smooth scrolling for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-          anchor.addEventListener('click', function(e) {
-            if (this.getAttribute('href') !== '#') {
-              e.preventDefault();
-              const targetId = this.getAttribute('href');
-              document.querySelector(targetId).scrollIntoView({
-                behavior: 'smooth'
-              });
+
+        document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+          anchor.addEventListener('click', (e) => {
+            const href = anchor.getAttribute('href');
+            if (href && href.length > 1) {
+              const target = document.querySelector(href);
+              if (target) {
+                e.preventDefault();
+                target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+              }
             }
           });
         });
-      });
+
+        const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        if ('IntersectionObserver' in window && !reduceMotion) {
+          const io = new IntersectionObserver(
+            (entries) => {
+              entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                  entry.target.classList.add('is-visible');
+                  io.unobserve(entry.target);
+                }
+              });
+            },
+            { threshold: 0.12, rootMargin: '0px 0px -40px 0px' }
+          );
+          document.querySelectorAll('.reveal').forEach((el) => io.observe(el));
+        } else {
+          document.querySelectorAll('.reveal').forEach((el) => el.classList.add('is-visible'));
+        }
+
+        const yearEl = document.getElementById('year');
+        if (yearEl) yearEl.textContent = new Date().getFullYear();
+      })();
     </script>
   </body>
 </html>
