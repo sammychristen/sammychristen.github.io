@@ -443,10 +443,64 @@ a:hover {
   font-size: 1rem;
 }
 
+.news-archive {
+  margin-top: 6px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  background: var(--surface);
+  overflow: hidden;
+}
+
+.news-archive-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 14px 18px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  cursor: pointer;
+  list-style: none;
+  user-select: none;
+  transition: color 0.2s var(--ease), background-color 0.2s var(--ease);
+}
+
+.news-archive-toggle::-webkit-details-marker {
+  display: none;
+}
+
+.news-archive-toggle:hover,
+.news-archive[open] > .news-archive-toggle {
+  color: var(--text);
+  background: var(--surface-2);
+}
+
+.news-archive-icon {
+  flex-shrink: 0;
+  font-size: 0.75rem;
+  color: var(--accent);
+  transition: transform 0.25s var(--ease);
+}
+
+.news-archive[open] .news-archive-icon {
+  transform: rotate(180deg);
+}
+
+.timeline-archive {
+  margin: 0;
+  padding: 4px 18px 16px 44px;
+  border-top: 1px solid var(--border);
+}
+
 @media (max-width: 600px) {
   .timeline-item {
     grid-template-columns: 1fr;
     gap: 4px;
+  }
+
+  .timeline-archive {
+    padding-left: 36px;
   }
 }
 
